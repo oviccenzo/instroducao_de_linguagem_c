@@ -15,8 +15,9 @@
 
 int main(){
 
-	double x1 = 10e-12, x2 = 10e-13, x3 = 10e-14, x4 = 10e-15, x5 = 10e-16;
 	//A) (1+x)/x, x = 10e-12, x = 10e-13, x = 10e-14, x= 10e-15, x = 10e-16,...
+	double x1 = 10e-12, x2 = 10e-13, x3 = 10e-14, x4 = 10e-15, x5 = 10e-16;
+
 	double resultado = (1+x1) -1 /x1;
 	double resultado1 = (1+x2) -1 /x1;
 	double resultado2 = (1+x3) -1 /x1;
@@ -24,8 +25,9 @@ int main(){
 	double resultado4 = (1+x5) -1 /x1;
 
 
-	float x8 = 10e12, x9 = 10e13, x10 = 10e13, x11 = 10e14, x12 = 10e15, x13 = 10e16;
 	//B) (1+1/x)ˆx , x = 10e12, x = 10e13, x = 10e14, x = 10e15, x = 10e16, ...
+	float x8 = 10e12, x9 = 10e13, x10 = 10e13, x11 = 10e14, x12 = 10e15, x13 = 10e16;
+
 //    double resultado1 = powf((1 + 1/x),x);
 //
 //    printf(" %lf ",resultado);

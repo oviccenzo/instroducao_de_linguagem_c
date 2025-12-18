@@ -11,15 +11,25 @@
 #include "cmath"
 
 int main(){
-	double u1 = 1, u2 = 0.01, u3 = 0.001;
+	double u = 1, u1 = 0.01, u2 = 0.001;
 
-	double resultado1 = exp(1/u1) /  1 + exp(1/u1);
-	double resultado2 = exp(1/u2) / 1 + exp(1/u2);
-	double resultado3 = exp(1/u3) / 1 + exp(1/u3);
+	double resultado = exp(1/u) /  (1 + exp(1/u));
+	double resultado1 = exp(1/u1) / (1 + exp(1/u1));
+	double resultado2 = exp(1/u2) / (1 + exp(1/u2));
+	printf("O resultado do numero exp(1/u) / (1 + exp(1/u)) eh: %lf\n"
+			,resultado);
+	printf("O resultado1 do numero exp(1/u1) / (1 + exp(1/u1)) eh: %lf\n "
+			,resultado1);
+	printf("O resultado2 do numero exp(1/u2) / (1 + exp(1/u2)) eh: %lf\n\n"
+			,resultado2);
 
-	printf(" %lf \n", resultado1);
-	printf(" %lf\n ", resultado2);
-	printf(" %lf\n", resultado3);
+	double u3 = 1 , u4 = 0.01 , u5 = 0.001;
+	double resultado3 = 1 / ((exp(-1/u3)) + 1);
+	double resultado4 = 1 / ((exp(-1/u4)) + 1);
+	double resultado5 = 1 / ((exp(-1/u5)) + 1);
+	printf("O resultado3 do numero 1 / (exp(-1/u3) + 1): %lf\n", resultado3);
+	printf("O resultado4 do numero 1 / (exp(-1/u4) + 1): %lf\n",  resultado4);
+	printf("O resultado5 do numero 1 / (exp(-1/u5) + 1): %lf\n",  resultado5);
 
 	return 0;
 }
